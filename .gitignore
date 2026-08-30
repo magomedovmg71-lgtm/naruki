@@ -1,0 +1,4 @@
+.playwright-mcp/
+*.png
+!assets/img/*.png
+node_modules/
