@@ -1,0 +1,462 @@
+- generic [active] [ref=f147e1]:
+  - link "Перейти к содержимому" [ref=f147e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f147e3]:
+    - generic [ref=f147e4]:
+      - link "MAGOMEDOV.WEB — на главную" [ref=f147e5] [cursor=pointer]:
+        - /url: "#top"
+        - text: MAGOMEDOV.WEB
+      - navigation "Основная навигация" [ref=f147e6]:
+        - list [ref=f147e7]:
+          - listitem [ref=f147e8]:
+            - link "01 Проекты" [ref=f147e9] [cursor=pointer]:
+              - /url: "#work"
+              - generic [ref=f147e10]: "01"
+              - generic [ref=f147e11]: Проекты
+          - listitem [ref=f147e12]:
+            - link "02 О себе" [ref=f147e13] [cursor=pointer]:
+              - /url: "#about"
+              - generic [ref=f147e14]: "02"
+              - generic [ref=f147e15]: О себе
+          - listitem [ref=f147e16]:
+            - link "03 Процесс" [ref=f147e17] [cursor=pointer]:
+              - /url: "#process"
+              - generic [ref=f147e18]: "03"
+              - generic [ref=f147e19]: Процесс
+          - listitem [ref=f147e20]:
+            - link "04 Контакты" [ref=f147e21] [cursor=pointer]:
+              - /url: "#contact"
+              - generic [ref=f147e22]: "04"
+              - generic [ref=f147e23]: Контакты
+      - generic [ref=f147e24]:
+        - button "Switch to English" [ref=f147e25] [cursor=pointer]:
+          - generic [ref=f147e26]: RU
+          - generic [ref=f147e27]: /
+          - generic [ref=f147e28]: EN
+        - link "Обсудить проект" [ref=f147e29] [cursor=pointer]:
+          - /url: "#contact"
+  - main [ref=f147e30]:
+    - region [ref=f147e31]:
+      - generic [ref=f147e32]:
+        - paragraph [ref=f147e33]:
+          - generic [ref=f147e35]: Веб-разработка — доступен для новых проектов
+        - heading "Сайты, с которыми бизнес выглядит дороже." [level=1] [ref=f147e36]:
+          - generic [ref=f147e37]: Сайты, с которыми
+          - generic [ref=f147e39]: бизнес выглядит
+          - emphasis [ref=f147e43]: дороже.
+        - generic [ref=f147e44]:
+          - paragraph [ref=f147e45]: Создаю современные, быстрые и адаптивные сайты для бизнеса.
+          - generic [ref=f147e46]:
+            - link "Смотреть проекты" [ref=f147e47] [cursor=pointer]:
+              - /url: "#work"
+              - generic [ref=f147e49]: →
+            - link "Обсудить проект" [ref=f147e50] [cursor=pointer]:
+              - /url: "#contact"
+        - paragraph [ref=f147e51]:
+          - generic [ref=f147e52]: Веб-разработка
+          - generic [ref=f147e53]: ·
+          - generic [ref=f147e54]: Интерфейсы
+          - generic [ref=f147e55]: ·
+          - generic [ref=f147e56]: Скорость
+        - generic [ref=f147e57]:
+          - generic [ref=f147e58]: 04 — избранных проекта
+          - generic [ref=f147e59]: HTML · CSS · JavaScript
+          - link "Листайте" [ref=f147e60] [cursor=pointer]:
+            - /url: "#work"
+            - generic [ref=f147e62]: ↓
+    - region [ref=f147e63]:
+      - generic [ref=f147e65]:
+        - paragraph [ref=f147e66]:
+          - generic [ref=f147e67]: "01"
+          - generic [ref=f147e68]: Работы
+        - heading "Избранные работы" [level=2] [ref=f147e69]
+        - paragraph [ref=f147e70]: Четыре проекта, которые показывают мой подход к дизайну и разработке.
+      - article [ref=f147e71]:
+        - generic [ref=f147e73]:
+          - paragraph [ref=f147e74]: "01"
+          - paragraph [ref=f147e75]: Кофейня и стритфуд / Доставка
+        - link "Открыть сайт НА РУКИ в новой вкладке" [ref=f147e77] [cursor=pointer]:
+          - /url: https://magomedov.website/naruki/
+          - 'img "Главная страница кофейни НА РУКИ: крупный заголовок и фотографии кофе навынос" [ref=f147e78]'
+          - generic [ref=f147e80]:
+            - generic [ref=f147e81]: Открыть проект
+            - generic [ref=f147e82]: →
+        - generic [ref=f147e83]:
+          - generic [ref=f147e84]:
+            - generic [ref=f147e85]:
+              - heading "НА РУКИ" [level=3] [ref=f147e86]
+              - paragraph [ref=f147e87]: "Кофейня со стритфудом: меню на 22 позиции с фильтром, корзина и оформление в три шага — доставка, самовывоз или зал. Сумма доставки считается по району, стол бронируется конкретный, а не «где-нибудь»."
+            - generic [ref=f147e88]:
+              - generic [ref=f147e89]:
+                - generic [ref=f147e90]:
+                  - term [ref=f147e91]: Роль
+                  - definition [ref=f147e92]: Дизайн и разработка
+                - generic [ref=f147e93]:
+                  - term [ref=f147e94]: Стек
+                  - definition [ref=f147e95]: HTML · CSS · JavaScript
+                - generic [ref=f147e96]:
+                  - term [ref=f147e97]: Год
+                  - definition [ref=f147e98]: "2026"
+              - link "Открыть сайт" [ref=f147e100] [cursor=pointer]:
+                - /url: https://magomedov.website/naruki/
+                - generic [ref=f147e102]: ↗
+          - generic [ref=f147e103]:
+            - figure "Меню на 22 позиции с фильтром по категориям" [ref=f147e104]:
+              - 'img "Страница меню НА РУКИ: карточки блюд с фотографиями, ценами и фильтром по категориям" [ref=f147e105]'
+            - figure "Мобильная версия" [ref=f147e107]:
+              - img "Мобильная версия сайта кофейни НА РУКИ на экране смартфона" [ref=f147e108]
+      - article [ref=f147e110]:
+        - generic [ref=f147e112]:
+          - paragraph [ref=f147e113]: "02"
+          - paragraph [ref=f147e114]: Барбершоп / Услуги
+        - link "Открыть сайт УСТА в новой вкладке" [ref=f147e116] [cursor=pointer]:
+          - /url: https://magomedov.website/usta/
+          - 'img "Главный экран сайта барбершопа УСТА: тёмная страница с крупным названием и кнопкой записи" [ref=f147e117]'
+          - generic [ref=f147e119]:
+            - generic [ref=f147e120]: Открыть проект
+            - generic [ref=f147e121]: →
+        - generic [ref=f147e122]:
+          - generic [ref=f147e123]:
+            - generic [ref=f147e124]:
+              - heading "УСТА" [level=3] [ref=f147e125]
+              - paragraph [ref=f147e126]: "Сайт барбершопа: прайс, мастера, галерея работ и запись онлайн. Плавная прокрутка с инерцией написана вручную, без библиотек."
+            - generic [ref=f147e127]:
+              - generic [ref=f147e128]:
+                - generic [ref=f147e129]:
+                  - term [ref=f147e130]: Роль
+                  - definition [ref=f147e131]: Дизайн и разработка
+                - generic [ref=f147e132]:
+                  - term [ref=f147e133]: Стек
+                  - definition [ref=f147e134]: HTML · CSS · JavaScript
+                - generic [ref=f147e135]:
+                  - term [ref=f147e136]: Год
+                  - definition [ref=f147e137]: "2026"
+              - generic [ref=f147e138]:
+                - link "Открыть сайт" [ref=f147e139] [cursor=pointer]:
+                  - /url: https://magomedov.website/usta/
+                  - generic [ref=f147e141]: ↗
+                - button "Смотреть кейс" [ref=f147e142] [cursor=pointer]
+          - generic [ref=f147e143]:
+            - figure "Лента работ с кнопками листания" [ref=f147e144]:
+              - 'img "Галерея работ на сайте УСТА: лента фотографий стрижек с кнопками листания" [ref=f147e145]'
+            - figure "Мобильная версия" [ref=f147e147]:
+              - img "Мобильная версия сайта барбершопа УСТА на экране смартфона" [ref=f147e148]
+      - article [ref=f147e150]:
+        - generic [ref=f147e151]:
+          - generic [ref=f147e152]:
+            - paragraph [ref=f147e153]: "03"
+            - paragraph [ref=f147e154]: Ресторан / Гостеприимство
+          - generic [ref=f147e155]:
+            - generic [ref=f147e156]:
+              - heading "SHAFRAN" [level=3] [ref=f147e157]
+              - paragraph [ref=f147e158]: Современный сайт ресторана с акцентом на атмосферу, меню, фотографии и бронирование.
+              - generic [ref=f147e159]:
+                - generic [ref=f147e160]:
+                  - term [ref=f147e161]: Роль
+                  - definition [ref=f147e162]: Дизайн и разработка
+                - generic [ref=f147e163]:
+                  - term [ref=f147e164]: Стек
+                  - definition [ref=f147e165]: HTML · CSS · JavaScript
+                - generic [ref=f147e166]:
+                  - term [ref=f147e167]: Год
+                  - definition [ref=f147e168]: "2026"
+              - generic [ref=f147e169]:
+                - link "Открыть сайт" [ref=f147e170] [cursor=pointer]:
+                  - /url: https://magomedov.website/shafran/
+                  - generic [ref=f147e172]: ↗
+                - button "Смотреть кейс" [ref=f147e173] [cursor=pointer]
+            - generic [ref=f147e174]:
+              - link "Открыть сайт SHAFRAN в новой вкладке" [ref=f147e175] [cursor=pointer]:
+                - /url: https://magomedov.website/shafran/
+                - img "Главный экран сайта ресторана SHAFRAN с полноэкранной фотографией и заголовком" [ref=f147e176]
+                - generic [ref=f147e178]:
+                  - generic [ref=f147e179]: Открыть проект
+                  - generic [ref=f147e180]: →
+              - figure [ref=f147e181]:
+                - img "Мобильная версия сайта ресторана SHAFRAN на экране смартфона" [ref=f147e182]
+          - generic [ref=f147e183]:
+            - figure "Меню с категориями" [ref=f147e184]:
+              - img "Раздел меню на сайте SHAFRAN с фотографиями блюд и ценами" [ref=f147e185]
+            - figure "Галерея" [ref=f147e187]:
+              - img "Галерея интерьера и блюд на сайте ресторана SHAFRAN" [ref=f147e188]
+      - article [ref=f147e190]:
+        - generic [ref=f147e192]:
+          - paragraph [ref=f147e193]: "04"
+          - paragraph [ref=f147e194]: Архитектура / Бюро
+        - link "Открыть сайт ATLAS ARCHITECTS в новой вкладке" [ref=f147e196] [cursor=pointer]:
+          - /url: https://magomedov.website/atlas-architects/
+          - img "Главный экран сайта ATLAS ARCHITECTS с крупной архитектурной фотографией и заголовком" [ref=f147e197]
+          - generic [ref=f147e199]:
+            - generic [ref=f147e200]: Открыть проект
+            - generic [ref=f147e201]: →
+        - generic [ref=f147e202]:
+          - generic [ref=f147e203]:
+            - heading "ATLAS ARCHITECTS" [level=3] [ref=f147e204]
+            - paragraph [ref=f147e205]: Премиальный сайт архитектурного бюро, разработанный мной с нуля.
+          - figure "Чертёж Постройка" [ref=f147e206]:
+            - 'img "Слайдер сравнения на сайте ATLAS ARCHITECTS: слева архитектурный чертёж, справа построенное здание" [ref=f147e207]'
+            - generic [ref=f147e208]:
+              - generic [ref=f147e209]: Чертёж
+              - generic [ref=f147e210]: →
+              - generic [ref=f147e211]: Постройка
+          - generic [ref=f147e212]:
+            - generic [ref=f147e213]:
+              - generic [ref=f147e214]:
+                - term [ref=f147e215]: Роль
+                - definition [ref=f147e216]: Дизайн и разработка
+              - generic [ref=f147e217]:
+                - term [ref=f147e218]: Стек
+                - definition [ref=f147e219]: HTML · CSS · JavaScript
+              - generic [ref=f147e220]:
+                - term [ref=f147e221]: Языки
+                - definition [ref=f147e222]: RU / EN
+              - generic [ref=f147e223]:
+                - term [ref=f147e224]: Год
+                - definition [ref=f147e225]: "2026"
+            - generic [ref=f147e227]:
+              - link "Открыть сайт" [ref=f147e228] [cursor=pointer]:
+                - /url: https://magomedov.website/atlas-architects/
+                - generic [ref=f147e230]: ↗
+              - link "Смотреть код" [ref=f147e231] [cursor=pointer]:
+                - /url: https://github.com/magomedovmg71-lgtm/atlas-architects
+                - generic [ref=f147e233]: ↗
+              - button "Смотреть кейс" [ref=f147e234] [cursor=pointer]
+          - generic [ref=f147e235]:
+            - figure "Редакционная сетка проектов" [ref=f147e236]:
+              - img "Сетка проектов на сайте ATLAS ARCHITECTS с крупными архитектурными фотографиями" [ref=f147e237]
+            - figure "Мобильная версия" [ref=f147e239]:
+              - img "Мобильная версия сайта ATLAS ARCHITECTS на экране смартфона" [ref=f147e240]
+    - region [ref=f147e242]:
+      - generic [ref=f147e243]:
+        - paragraph [ref=f147e245]:
+          - generic [ref=f147e246]: "02"
+          - generic [ref=f147e247]: О себе
+        - generic [ref=f147e248]:
+          - heading "Делаю сайты, а не шаблоны." [level=2] [ref=f147e249]: Делаю сайты,а не шаблоны.
+          - generic [ref=f147e250]:
+            - paragraph [ref=f147e251]: Меня зовут Магомед, я веб-разработчик из Махачкалы. Создаю сайты, которые выглядят современно, быстро работают и одинаково аккуратны на компьютере, планшете и телефоне.
+            - paragraph [ref=f147e252]: "Каждый проект пишу вручную: без конструкторов и тяжёлых шаблонов. Работаю с клиентами из любого города — всё общение онлайн."
+        - list [ref=f147e253]:
+          - listitem [ref=f147e254]:
+            - generic [ref=f147e255]: "01"
+            - generic [ref=f147e256]: Адаптивность
+            - generic [ref=f147e257]: Одинаково аккуратно на телефоне, планшете и мониторе.
+          - listitem [ref=f147e258]:
+            - generic [ref=f147e259]: "02"
+            - generic [ref=f147e260]: Скорость
+            - generic [ref=f147e261]: Сжатые изображения, свои шрифты, ни одной лишней библиотеки.
+          - listitem [ref=f147e262]:
+            - generic [ref=f147e263]: "03"
+            - generic [ref=f147e264]: SEO-готовность
+            - generic [ref=f147e265]: Семантическая разметка, мета-теги и Schema.org с первого дня.
+          - listitem [ref=f147e266]:
+            - generic [ref=f147e267]: "04"
+            - generic [ref=f147e268]: Современный UI
+            - generic [ref=f147e269]: Продуманная типографика и композиция вместо готового шаблона.
+    - region [ref=f147e270]:
+      - generic [ref=f147e271]:
+        - generic [ref=f147e272]:
+          - paragraph [ref=f147e273]:
+            - generic [ref=f147e274]: Стек
+          - heading "Возможности" [level=2] [ref=f147e275]
+        - list [ref=f147e276]:
+          - listitem [ref=f147e277]:
+            - generic [ref=f147e278]: "01"
+            - generic [ref=f147e279]: HTML5
+            - generic [ref=f147e280]: Семантическая вёрстка
+          - listitem [ref=f147e281]:
+            - generic [ref=f147e282]: "02"
+            - generic [ref=f147e283]: CSS3
+            - generic [ref=f147e284]: Grid · Flexbox · Анимации
+          - listitem [ref=f147e285]:
+            - generic [ref=f147e286]: "03"
+            - generic [ref=f147e287]: JavaScript
+            - generic [ref=f147e288]: Vanilla, без фреймворков
+          - listitem [ref=f147e289]:
+            - generic [ref=f147e290]: "04"
+            - generic [ref=f147e291]: Адаптивная вёрстка
+            - generic [ref=f147e292]: 320 → 1440+
+          - listitem [ref=f147e293]:
+            - generic [ref=f147e294]: "05"
+            - generic [ref=f147e295]: Интерфейсы
+            - generic [ref=f147e296]: UI и композиция
+          - listitem [ref=f147e297]:
+            - generic [ref=f147e298]: "06"
+            - generic [ref=f147e299]: Git
+            - generic [ref=f147e300]: Версионирование
+          - listitem [ref=f147e301]:
+            - generic [ref=f147e302]: "07"
+            - generic [ref=f147e303]: GitHub
+            - generic [ref=f147e304]: Хостинг и публикация
+          - listitem [ref=f147e305]:
+            - generic [ref=f147e306]: "08"
+            - generic [ref=f147e307]: SEO
+            - generic [ref=f147e308]: Meta · OG · Schema.org
+          - listitem [ref=f147e309]:
+            - generic [ref=f147e310]: "09"
+            - generic [ref=f147e311]: Скорость
+            - generic [ref=f147e312]: Вес, изображения, шрифты
+          - listitem [ref=f147e313]:
+            - generic [ref=f147e314]: "10"
+            - generic [ref=f147e315]: Доступность
+            - generic [ref=f147e316]: Клавиатура · контраст · ARIA
+    - region [ref=f147e317]:
+      - generic [ref=f147e318]:
+        - generic [ref=f147e319]:
+          - paragraph [ref=f147e320]:
+            - generic [ref=f147e321]: "03"
+            - generic [ref=f147e322]: Процесс
+          - heading "Как я работаю" [level=2] [ref=f147e323]
+        - list [ref=f147e324]:
+          - listitem [ref=f147e325]:
+            - generic [ref=f147e326]: "01"
+            - generic [ref=f147e327]:
+              - heading "Обсуждение" [level=3] [ref=f147e328]
+              - paragraph [ref=f147e329]: Понимаю задачу, бизнес и цели проекта.
+          - listitem [ref=f147e330]:
+            - generic [ref=f147e331]: "02"
+            - generic [ref=f147e332]:
+              - heading "Дизайн" [level=3] [ref=f147e333]
+              - paragraph [ref=f147e334]: Продумываю структуру, композицию и визуальный стиль.
+          - listitem [ref=f147e335]:
+            - generic [ref=f147e336]: "03"
+            - generic [ref=f147e337]:
+              - heading "Разработка" [level=3] [ref=f147e338]
+              - paragraph [ref=f147e339]: Создаю адаптивный сайт и интерактивные элементы.
+          - listitem [ref=f147e340]:
+            - generic [ref=f147e341]: "04"
+            - generic [ref=f147e342]:
+              - heading "Тестирование" [level=3] [ref=f147e343]
+              - paragraph [ref=f147e344]: Проверяю мобильную версию, скорость, accessibility и корректность работы.
+          - listitem [ref=f147e345]:
+            - generic [ref=f147e346]: "05"
+            - generic [ref=f147e347]:
+              - heading "Запуск" [level=3] [ref=f147e348]
+              - paragraph [ref=f147e349]: Подготавливаю сайт к публикации.
+    - region [ref=f147e350]:
+      - generic [ref=f147e351]:
+        - generic [ref=f147e352]:
+          - paragraph [ref=f147e353]:
+            - generic [ref=f147e354]: Почему
+          - heading "Сделано для бизнеса." [level=2] [ref=f147e355]
+        - generic [ref=f147e356]:
+          - article [ref=f147e357]:
+            - paragraph [ref=f147e358]: "01"
+            - heading "Современный дизайн" [level=3] [ref=f147e359]
+            - paragraph [ref=f147e360]: Сайт выглядит актуально и профессионально.
+          - article [ref=f147e361]:
+            - paragraph [ref=f147e362]: "02"
+            - heading "Адаптивность" [level=3] [ref=f147e363]
+            - paragraph [ref=f147e364]: Корректная работа на компьютере, планшете и телефоне.
+          - article [ref=f147e365]:
+            - paragraph [ref=f147e366]: "03"
+            - heading "Скорость" [level=3] [ref=f147e367]
+            - paragraph [ref=f147e368]: Чистый код и внимание к скорости загрузки.
+    - region [ref=f147e369]:
+      - generic [ref=f147e370]:
+        - paragraph [ref=f147e372]:
+          - generic [ref=f147e373]: "04"
+          - generic [ref=f147e374]: Контакты
+        - generic [ref=f147e375]:
+          - heading "Нужен сайт для бизнеса?" [level=2] [ref=f147e376]: Нужен сайтдля бизнеса?
+          - paragraph [ref=f147e377]: Расскажите о своей задаче — обсудим, какой сайт подойдёт вашему бизнесу.
+          - link "Начать проект" [ref=f147e378] [cursor=pointer]:
+            - /url: "#contact-form"
+            - generic [ref=f147e380]: →
+        - generic [ref=f147e381]:
+          - generic [ref=f147e382]:
+            - paragraph [ref=f147e383]: Прямой контакт
+            - list [ref=f147e384]:
+              - listitem [ref=f147e385]:
+                - link "+7 922 676-57-15" [ref=f147e386] [cursor=pointer]:
+                  - /url: tel:+79226765715
+              - listitem [ref=f147e387]:
+                - link "WhatsApp" [ref=f147e388] [cursor=pointer]:
+                  - /url: https://wa.me/79226765715
+                  - text: WhatsApp ↗
+              - listitem [ref=f147e389]:
+                - link "magomedovmg71@gmail.com" [ref=f147e390] [cursor=pointer]:
+                  - /url: mailto:magomedovmg71@gmail.com
+              - listitem [ref=f147e391]:
+                - link "Telegram" [ref=f147e392] [cursor=pointer]:
+                  - /url: https://t.me/+79226765715
+                  - text: Telegram ↗
+            - paragraph [ref=f147e393]:
+              - generic [ref=f147e395]: Отвечаю на звонки, в WhatsApp, на письма и в Telegram.
+          - generic [ref=f147e396]:
+            - note [ref=f147e397]:
+              - text: Отвечаю в течение рабочего дня. Если удобнее в мессенджере — напишите в
+              - strong [ref=f147e398]: Telegram
+              - text: или
+              - strong [ref=f147e399]: WhatsApp
+              - text: .
+            - generic [ref=f147e400]:
+              - generic [ref=f147e401]: Не заполняйте это поле
+              - textbox [ref=f147e402]
+            - generic [ref=f147e403]:
+              - generic [ref=f147e404]: Имя
+              - textbox "Имя" [ref=f147e405]
+              - alert
+            - generic [ref=f147e406]:
+              - generic [ref=f147e407]: Email
+              - textbox "Email" [ref=f147e408]
+              - alert
+            - generic [ref=f147e409]:
+              - generic [ref=f147e410]: Телефон
+              - textbox "Телефон" [ref=f147e411]:
+                - /placeholder: +7 900 000-00-00
+              - alert
+            - generic [ref=f147e412]:
+              - generic [ref=f147e413]: Сообщение
+              - textbox "Сообщение" [ref=f147e414]
+              - alert
+            - button "Отправить сообщение" [ref=f147e415] [cursor=pointer]:
+              - generic [ref=f147e417]: →
+            - status [ref=f147e418]
+  - contentinfo [ref=f147e419]:
+    - generic [ref=f147e420]:
+      - generic [ref=f147e421]:
+        - generic [ref=f147e422]:
+          - paragraph [ref=f147e423]: MAGOMEDOV.WEB
+          - paragraph [ref=f147e424]: Веб-разработка и цифровые продукты.
+        - navigation "Навигация в подвале" [ref=f147e425]:
+          - generic [ref=f147e426]:
+            - paragraph [ref=f147e427]: Меню
+            - list [ref=f147e428]:
+              - listitem [ref=f147e429]:
+                - link "Проекты" [ref=f147e430] [cursor=pointer]:
+                  - /url: "#work"
+              - listitem [ref=f147e431]:
+                - link "О себе" [ref=f147e432] [cursor=pointer]:
+                  - /url: "#about"
+              - listitem [ref=f147e433]:
+                - link "Процесс" [ref=f147e434] [cursor=pointer]:
+                  - /url: "#process"
+              - listitem [ref=f147e435]:
+                - link "Контакты" [ref=f147e436] [cursor=pointer]:
+                  - /url: "#contact"
+          - generic [ref=f147e437]:
+            - paragraph [ref=f147e438]: Ссылки
+            - list [ref=f147e439]:
+              - listitem [ref=f147e440]:
+                - link "+7 922 676-57-15" [ref=f147e441] [cursor=pointer]:
+                  - /url: tel:+79226765715
+              - listitem [ref=f147e442]:
+                - link "WhatsApp" [ref=f147e443] [cursor=pointer]:
+                  - /url: https://wa.me/79226765715
+                  - text: WhatsApp ↗
+              - listitem [ref=f147e444]:
+                - link "Почта" [ref=f147e445] [cursor=pointer]:
+                  - /url: mailto:magomedovmg71@gmail.com
+              - listitem [ref=f147e446]:
+                - link "Telegram" [ref=f147e447] [cursor=pointer]:
+                  - /url: https://t.me/+79226765715
+                  - text: Telegram ↗
+              - listitem [ref=f147e448]:
+                - link "Код Atlas" [ref=f147e449] [cursor=pointer]:
+                  - /url: https://github.com/magomedovmg71-lgtm/atlas-architects
+                  - text: Код Atlas ↗
+      - generic [ref=f147e450]:
+        - paragraph [ref=f147e451]: © 2026 MAGOMEDOV.WEB
+        - paragraph [ref=f147e452]: Дизайн и разработка — MAGOMEDOV.WEB
+  - text: +
