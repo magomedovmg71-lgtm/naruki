@@ -4,7 +4,23 @@
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const money = n => n.toLocaleString('ru-RU') + ' ₽';
   const MENU = window.MENU || [];
-  const byId = id => MENU.find(d => d.id === id);
+  const byMenu = id => MENU.find(d => d.id === id);
+
+  // Комбо — не позиция меню, а пара блюд под одним id вида combo:scramble+flat.
+  // Корзина работает с ним как с обычной строкой, цена уже со скидкой.
+  const COMBO_OFF = .28;
+  const combo = id => {
+    const [a, b] = id.slice(6).split('+').map(byMenu);
+    if (!a || !b) return null;
+    if (!window.COMBO_FOOD.includes(a.id) || b.cat !== 'coffee') return null;   // скидка только на пары из акции
+    const sum = a.price + b.price;
+    return {
+      id, name: `Комбо: ${a.name} + ${b.name}`,
+      price: Math.round(sum * (1 - COMBO_OFF) / 10) * 10,
+      weight: `вместо ${money(sum)}`
+    };
+  };
+  const byId = id => id.startsWith('combo:') ? combo(id) : byMenu(id);
 
   /* ——— шапка ——— */
   const hdr = $('.hdr');
@@ -107,6 +123,37 @@
     });
     // кнопка-метка в шапке ведёт сюда с ?map=city — открываем сразу карту
     if (new URLSearchParams(location.search).get('map') === 'city') showMap(true);
+  }
+
+  /* ——— комбо: завтрак плюс кофе ——— */
+  const comboBox = $('#combo');
+  if (comboBox) {
+    const opts = list => list.filter(d => d && !d.out)
+      .map(d => `<option value="${d.id}">${d.name}</option>`).join('');
+    const food = $('#combo-food'), drink = $('#combo-drink');
+    food.innerHTML = opts(window.COMBO_FOOD.map(byMenu));
+    drink.innerHTML = opts(MENU.filter(d => d.cat === 'coffee'));
+    food.value = 'scramble'; drink.value = 'flat';      // пара из заголовка: 680 ₽ → 490 ₽
+
+    const [from, till] = window.COMBO_HOURS;
+    const nowH = new Date().getHours();
+    const open = nowH >= from && nowH < till;
+
+    const paintCombo = () => {
+      const c = combo(`combo:${food.value}+${drink.value}`);
+      $('#combo-now').textContent = money(c.price);
+      $('#combo-old').textContent = money(byMenu(food.value).price + byMenu(drink.value).price);
+      if (open) $('#combo-add').dataset.add = c.id;     // дальше сработает общий обработчик [data-add]
+    };
+    comboBox.addEventListener('change', paintCombo);
+    paintCombo();
+
+    if (!open) {
+      food.disabled = drink.disabled = $('#combo-add').disabled = true;
+      delete $('#combo-add').dataset.add;               // чтобы пара не ушла в корзину мимо часов акции
+      $('#combo-when').textContent = `Комбо собирают с ${from}:00 до ${till}:00. Сейчас сырники, скрэмбл и кофе есть в меню по обычной цене.`;
+      $('#combo-when').hidden = false;
+    }
   }
 
   /* ——— зоны доставки ——— */

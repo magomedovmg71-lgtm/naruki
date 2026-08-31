@@ -46,7 +46,7 @@
     "postalCode": "367000",
     "addressCountry": "RU"
   },
-  "geo": { "@type": "GeoCoordinates", "latitude": 42.9764, "longitude": 47.5024 },
+  "geo": { "@type": "GeoCoordinates", "latitude": 42.980495, "longitude": 47.500409 },
   "openingHoursSpecification": [{
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
@@ -178,15 +178,20 @@
     <div class="wrap">
       <div class="combo rise">
         <div class="combo__body">
-          <span class="eyebrow" style="color:var(--accent-soft)">Комбо до 12:00</span>
+          <span class="eyebrow" style="color:var(--accent-soft)">Комбо с 8:00 до 12:00</span>
           <h2>Завтрак <br>и кофе</h2>
-          <p>Сырники или скрэмбл плюс любой кофе на 250 мл. Работает каждый день, пока кухня не переключилась на обед.</p>
+          <p>Сырники или скрэмбл с авокадо плюс любой кофе — на 28% дешевле, чем по отдельности. Каждый день, пока кухня не переключилась на обед.</p>
+          <div class="combo__pick" id="combo">
+            <div class="field"><label for="combo-food">Завтрак</label><select id="combo-food"></select></div>
+            <div class="field"><label for="combo-drink">Кофе</label><select id="combo-drink"></select></div>
+          </div>
           <div class="combo__price">
-            <span class="combo__now">490 ₽</span>
-            <span class="combo__old">680 ₽</span>
+            <span class="combo__now" id="combo-now">490 ₽</span>
+            <span class="combo__old" id="combo-old">680 ₽</span>
             <span class="combo__save">−28%</span>
           </div>
-          <div><a class="btn btn--accent" href="menu.html">Собрать завтрак</a></div>
+          <div><button class="btn btn--accent" type="button" id="combo-add" data-add="combo:scramble+flat">Добавить в корзину</button></div>
+          <p class="note" id="combo-when" hidden></p>
         </div>
         <div class="ph ph--dark"><img src="assets/img/combo.webp" alt="Кофе и выпечка на столе" width="820" height="690" loading="lazy" decoding="async"></div>
       </div>
