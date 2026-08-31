@@ -150,6 +150,7 @@
     paintCombo();
 
     if (!open) {
+      comboBox.closest('.combo').classList.add('is-closed');
       food.disabled = drink.disabled = $('#combo-add').disabled = true;
       delete $('#combo-add').dataset.add;               // чтобы пара не ушла в корзину мимо часов акции
       $('#combo-when').textContent = `Комбо собирают с ${from}:00 до ${till}:00. Сейчас сырники, скрэмбл и кофе есть в меню по обычной цене.`;

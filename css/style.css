@@ -277,8 +277,13 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .combo .field label { color: rgba(245, 240, 230, .6); }
 .combo .field select { background: rgba(245, 240, 230, .07); border-color: rgba(245, 240, 230, .28); color: var(--cream); }
 .combo .field select option { color: var(--ink); background: var(--card); }   /* выпадающий список остаётся светлым */
-.combo .field select:disabled { opacity: .45; }
 .combo .note { color: rgba(245, 240, 230, .55); margin-top: 14px; }
+/* вне часов акции — как занятый стол в брони: чуть темнее и цена зачёркнута */
+.combo.is-closed .combo__pick,
+.combo.is-closed .combo__price,
+.combo.is-closed .btn { opacity: .5; }
+.combo.is-closed .combo__now { text-decoration: line-through; }
+.combo.is-closed .combo__old { text-decoration: none; }
 .combo .btn--ghost { --fg: var(--cream); border-color: rgba(245, 240, 230, .3); }
 .combo .btn--ghost:hover { --bg: var(--cream); --fg: var(--ink); }
 
