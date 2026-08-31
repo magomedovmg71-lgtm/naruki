@@ -425,7 +425,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .drawer__foot { border-top: 1px solid var(--line); padding: 20px 26px calc(20px + env(safe-area-inset-bottom)); background: var(--card); }
 
 .cart-line { display: grid; grid-template-columns: 56px 1fr auto; gap: 14px; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--line); }
-.cart-line__ph { width: 56px; height: 56px; border-radius: var(--r-s); background: linear-gradient(148deg, var(--ph-1), var(--ph-2)); }
+.cart-line__ph { width: 56px; height: 56px; border-radius: var(--r-s); background: linear-gradient(148deg, var(--ph-1), var(--ph-2)); overflow: hidden; }
+.cart-line__ph img { width: 100%; height: 100%; object-fit: cover; }
 .cart-line__name { font-size: 15.5px; font-weight: 600; line-height: 1.3; }
 .cart-line__price { font-size: 13.5px; color: var(--ink-3); margin-top: 3px; }
 .qty { display: flex; align-items: center; gap: 4px; border: 1px solid var(--line); border-radius: 100px; padding: 3px; background: var(--card); }

@@ -17,7 +17,8 @@
     return {
       id, name: `Комбо: ${a.name} + ${b.name}`,
       price: Math.round(sum * (1 - COMBO_OFF) / 10) * 10,
-      weight: `вместо ${money(sum)}`
+      weight: `вместо ${money(sum)}`,
+      photo: 'combo'                                  // у пары своего снимка нет, берём кадр из блока на главной
     };
   };
   const byId = id => id.startsWith('combo:') ? combo(id) : byMenu(id);
@@ -254,7 +255,7 @@
     if (step === 1) {
       body.innerHTML = its.map(({ d, q }) => `
         <div class="cart-line">
-          <div class="cart-line__ph"></div>
+          <div class="cart-line__ph"><img src="assets/img/${d.photo || d.id}.webp" alt="" width="56" height="56" loading="lazy"></div>
           <div>
             <div class="cart-line__name">${d.name}</div>
             <div class="cart-line__price">${money(d.price)} · ${d.weight}</div>
