@@ -57,7 +57,12 @@
 *, *::before, *::after { box-sizing: border-box; }
 [hidden] { display: none !important; }   /* иначе display:flex у .dish перебивает атрибут */
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;                /* страницу нельзя утянуть вбок: clip не создаёт контейнер прокрутки, sticky живёт */
+  overscroll-behavior-x: none;     /* и не отскакивает резинкой при свайпе */
+  touch-action: manipulation;      /* двойной тап не зумит — ни на главной, ни в корзине, ни в диалогах */
+}
 
 body {
   margin: 0;
@@ -65,7 +70,6 @@ body {
   color: var(--ink);
   font: 400 17px/1.6 Onest, -apple-system, "Segoe UI", Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -135,7 +139,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .logo__dot { width: 11px; height: 11px; border-radius: 50%; background: var(--accent); flex: none; }
 
 .nav { display: flex; gap: 26px; margin-left: auto; }
-.nav a { font-size: 15.5px; font-weight: 500; position: relative; padding: 4px 0; color: var(--ink-2); transition: color var(--mid) var(--ease); }
+.nav a { font-size: 15.5px; font-weight: 500; position: relative; padding: 4px 0; color: var(--ink-2); white-space: nowrap; transition: color var(--mid) var(--ease); }
 .nav a::after {
   content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1.5px;
   background: var(--accent); transform: scaleX(0); transform-origin: left;
@@ -524,9 +528,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 @media (max-width: 1024px) {
   .ftr__grid { grid-template-columns: 1fr 1fr; }
   .find { grid-template-columns: 1fr; }
-}
-
-@media (max-width: 860px) {
+  /* на планшете четыре пункта в строку не помещались — тут уже бургер */
   .burger { display: block; }
   .nav {
     position: fixed; inset: 74px 0 auto; flex-direction: column; gap: 0;
@@ -538,7 +540,6 @@ button, input, select, textarea { font: inherit; color: inherit; }
   .nav.is-open { transform: none; visibility: visible; }
   .nav a { padding: 15px 0; border-bottom: 1px solid var(--line); font-size: 17px; }
   .nav a::after { display: none; }
-  .hdr__act .cart-btn span:not(.cart-btn__count) { display: none; }
   .hdr__in { gap: 10px; }
   .logo { font-size: 17px; }
   .pin-btn, .burger { width: 40px; height: 40px; }
@@ -556,6 +557,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 }
 
 @media (max-width: 560px) {
+  .hdr__act .cart-btn span:not(.cart-btn__count) { display: none; }   /* до 560 подпись «Корзина» не влезает, дальше — влезает */
   .row2, .ftr__grid { grid-template-columns: 1fr; }
   .grid-dish { grid-template-columns: 1fr; }
   .hero__art { grid-template-columns: 1fr; }
