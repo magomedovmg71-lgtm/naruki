@@ -216,6 +216,11 @@
   const drawer = $('#drawer'), overlay = $('#overlay');
   let step = 1;
 
+  // «Собрать заказ» на delivery.html ведёт сюда с ?how=pickup: способ получения
+  // подставляется сразу, иначе обещанные там −10% пришлось бы искать руками.
+  const HOW_URL = new URLSearchParams(location.search).get("how");
+  const HOW0 = ["delivery", "pickup", "here"].includes(HOW_URL) ? HOW_URL : "delivery";
+
   const openDrawer = () => {
     drawer.classList.add('is-open'); overlay.classList.add('is-open');
     drawer.setAttribute('aria-hidden', 'false');
@@ -280,9 +285,9 @@
         <div>
           <label class="field"><span class="sr">Способ получения</span></label>
           <div class="chips" id="how">
-            <label class="chip"><input type="radio" name="how" value="delivery" checked><span>Доставка</span></label>
-            <label class="chip"><input type="radio" name="how" value="pickup"><span>Самовывоз</span></label>
-            <label class="chip"><input type="radio" name="how" value="here"><span>В зале</span></label>
+            <label class="chip"><input type="radio" name="how" value="delivery"${HOW0==='delivery'?' checked':''}><span>Доставка</span></label>
+            <label class="chip"><input type="radio" name="how" value="pickup"${HOW0==='pickup'?' checked':''}><span>Самовывоз</span></label>
+            <label class="chip"><input type="radio" name="how" value="here"${HOW0==='here'?' checked':''}><span>В зале</span></label>
           </div>
         </div>
         <div class="row2">
@@ -352,7 +357,7 @@
 
     $('#how').addEventListener('change', e => drawHow(e.target.value));
     $('#c-tel').addEventListener('input', maskTel);
-    drawHow('delivery');
+    drawHow(HOW0);
   }
 
   drawer?.addEventListener('click', e => {
