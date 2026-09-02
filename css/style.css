@@ -392,6 +392,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
   transition: background var(--mid) var(--ease), color var(--mid) var(--ease), border-color var(--mid) var(--ease);
 }
 .chip input:checked ~ span { background: var(--ink); color: var(--cream); border-color: var(--ink); }
+.chip__off { color: var(--accent); font-weight: 700; }   /* скидка видна на самом выборе, а не только в итогах */
+.chip input:checked ~ span .chip__off { color: var(--accent-soft); }
 .chip input:focus-visible ~ span { box-shadow: 0 0 0 3px rgba(20, 17, 13, .12); }
 
 .note { font-size: 13px; color: var(--ink-3); }

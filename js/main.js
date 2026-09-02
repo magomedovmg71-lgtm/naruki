@@ -286,7 +286,7 @@
           <label class="field"><span class="sr">Способ получения</span></label>
           <div class="chips" id="how">
             <label class="chip"><input type="radio" name="how" value="delivery"${HOW0==='delivery'?' checked':''}><span>Доставка</span></label>
-            <label class="chip"><input type="radio" name="how" value="pickup"${HOW0==='pickup'?' checked':''}><span>Самовывоз</span></label>
+            <label class="chip"><input type="radio" name="how" value="pickup"${HOW0==='pickup'?' checked':''}><span>Самовывоз <b class="chip__off">−10%</b></span></label>
             <label class="chip"><input type="radio" name="how" value="here"${HOW0==='here'?' checked':''}><span>В зале</span></label>
           </div>
         </div>
