@@ -280,6 +280,26 @@
     </div>
   </section>
 
+  <section class="section section--tight" id="tryon">
+    <div class="wrap">
+      <div class="tryon">
+        <span class="eyebrow">Примерка</span>
+        <h2 class="h-sec">А теперь ваше название</h2>
+        <p class="tryon__lead">Впишите своё заведение и выберите цвет. Сайт перекрасится целиком — шапка, кнопки, меню, бронь. Выбор поедет за вами по всем страницам, пока не нажмёте «вернуть как было».</p>
+        <div class="tryon__row">
+          <input id="tryon-name" type="text" maxlength="22" placeholder="Например, Тёплый угол" autocomplete="off" aria-label="Название вашего заведения">
+          <div class="tryon__colors" id="tryon-colors" role="group" aria-label="Цвет"></div>
+        </div>
+        <div class="tryon__btns">
+          <button class="btn btn--accent" id="tryon-go" type="button">Примерить</button>
+          <button class="btn" id="tryon-reset" type="button">Вернуть как было</button>
+          <button class="btn" id="tryon-share" type="button" hidden>Скопировать ссылку</button>
+        </div>
+        <p class="tryon__done" id="tryon-done" hidden></p>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer class="ftr">
@@ -337,5 +357,6 @@
 <script src="js/analytics.js" defer></script>
 <script src="js/menu-data.js"></script>
 <script src="js/main.js" defer></script>
+<script src="js/tryon.js" defer></script>
 </body>
 </html>

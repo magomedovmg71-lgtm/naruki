@@ -584,3 +584,26 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .skip:focus { top: 0; }
 
 .sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+/* Примерка на своё заведение. Палитру меняет tryon.js через переменные :root,
+   поэтому здесь только сам блок — цвета он берёт те же, что и весь сайт. */
+.tryon { background: var(--card); border: 1px solid var(--line); border-radius: var(--r);
+  padding: clamp(24px, 4vw, 44px); box-shadow: var(--shadow); }
+.tryon__lead { max-width: 62ch; color: var(--ink-2); margin: 8px 0 24px; }
+.tryon__row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+.tryon__row input { flex: 1 1 260px; min-width: 0; font: inherit; color: var(--ink);
+  background: var(--cream); border: 1px solid var(--line); border-radius: var(--r-s);
+  padding: 14px 16px; transition: border-color var(--mid) var(--ease); }
+.tryon__row input:focus { outline: none; border-color: var(--accent); }
+.tryon__colors { display: flex; gap: 10px; }
+.swatch { width: 38px; height: 38px; border-radius: 50%; border: 2px solid var(--line);
+  cursor: pointer; padding: 0; transition: transform var(--mid) var(--ease), border-color var(--mid) var(--ease); }
+.swatch:hover { transform: scale(1.08); }
+.swatch.is-on { border-color: var(--ink); transform: scale(1.12); }
+.tryon__btns { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+.tryon__done { margin: 18px 0 0; color: var(--accent); font-weight: 600; }
+/* Длинное название из примерки расталкивало шапку на телефоне: страница становилась
+   шире экрана и бургер уезжал за край. Логотип теперь сжимается, хвост уходит в затухание. */
+.hdr .logo { min-width: 0; max-width: 46vw; overflow: hidden; white-space: nowrap;
+  -webkit-mask-image: linear-gradient(90deg, #000 86%, transparent);
+          mask-image: linear-gradient(90deg, #000 86%, transparent); }
